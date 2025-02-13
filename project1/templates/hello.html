@@ -1,0 +1,11 @@
+{%for x in movies%}
+
+<h2>Title:{{x.title | upper}}</h2>
+<p>summary:{{x.summary}}</p>
+<h3>year:{{x.year}}</h3>
+{% if x.sucess %}
+<p>movie is sucesses</p>
+{%else%}
+<p>movie is not sucesses</p>
+{% endif %}
+{%endfor%}
