@@ -1,2 +1,13 @@
+
 {% include 'menu.html' %}
-<h3>craete</h3>
+<h3>craete
+   
+</h3>
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    Title: <input type="text"  name="title" />
+    Year: <input type="text"  name="year" />
+    Summary: <input type="text"  name="summary" />
+
+    <button type="submit">create</button>
+</form>
